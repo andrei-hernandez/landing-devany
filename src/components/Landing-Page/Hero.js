@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroImg from '../../img/hero-img.png'
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay={200}>
-            <img src="https://devany.mx/assets/img/hero-img.png" className="img-fluid animated" alt="" />
+            <img src={HeroImg} className="img-fluid animated" alt="" />
           </div>
         </div>
       </div>
