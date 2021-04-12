@@ -13,11 +13,6 @@ export default function Contact() {
         <div className="row">
           <div className="col-lg-5 d-flex align-items-stretch">
             <div className="info">
-              {/*<div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>*/}
               <div className="email">
                 <i className="icofont-envelope" />
                 <h4>Email:</h4>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Team.css';
 
 export default function Team() {
   return (
@@ -12,7 +13,6 @@ export default function Team() {
           <div className="col-lg-3" />
           <div className="col-lg-6">
             <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay={100}>
-              {/*<div class="pic"><img src="https://devany.mx/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>*/}
               <div className="member-info">
                 <h4>Atl Edrei Cruz Castillo</h4>
                 <span>CEO &amp; Head developer</span>
