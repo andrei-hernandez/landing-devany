@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
               <h4>¡Registrate a nuestro newslatter!</h4>
               <p>Podrás recibir cupones de descuento por parte de nuestro equipo de ventas.</p>
               <form action method="post">
-                <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" />
+                <input type="email" name="email" /><input type="submit" value="Subscribe" />
               </form>
             </div>
           </div>
