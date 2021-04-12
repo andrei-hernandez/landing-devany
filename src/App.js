@@ -1,10 +1,9 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap';
 import AOS from 'aos';
-import LandingPage from './components/Landing-Page';
+import LandingPage from './components/';
 
 function App() {
 

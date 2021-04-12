@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap';
-import Headder from './Headder';
-import Main from './Main';
-import './styles.css';
+import '../App.css';
+import Headder from './Header';
+import Main from './Main/Main';
 import Footer from './Footer';
 
 

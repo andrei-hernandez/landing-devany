@@ -1,0 +1,140 @@
+.mobile-nav-toggle {
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.nav-link {
+  color: #47b2e4;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  position: relative;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu .a:hover, .nav-menu .active>.a, .nav-menu li:hover>.a {
+  color: #47b2e4;
+}
+
+.mobile-nav-toggle i {
+  color: #fff;
+}
+
+.mobile-nav-toggle {
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mr-auto, .mx-auto {
+  margin-right: auto !important;
+}
+
+.nav-menu>ul {
+  display: flex;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+#logo {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+}
