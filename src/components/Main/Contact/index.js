@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cta.css';
+import './Contact.css';
 
 export default function Contact() {
   return (
@@ -54,7 +54,7 @@ export default function Contact() {
                 <div className="error-message" />
                 <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div className="text-center"><button type="submit">Enviar mensaje</button></div>
+              <div className="text-center"><button>Enviar mensaje</button></div>
             </form>
           </div>
         </div>

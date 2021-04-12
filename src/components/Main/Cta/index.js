@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Cta.css';
 
 export default function Cta() {
   return (
