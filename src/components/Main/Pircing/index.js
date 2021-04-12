@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Pircing.css';
 
 export default function Pircing() {
   return (
