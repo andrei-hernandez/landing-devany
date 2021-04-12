@@ -49,3 +49,8 @@
   text-decoration: none;
   background-color: transparent;
 }
+
+.cta .cta-btn:hover {
+  background: #47b2e4;
+  border: 2px solid #47b2e4;
+}

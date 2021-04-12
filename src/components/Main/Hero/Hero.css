@@ -2,6 +2,7 @@
   width: 100%;
   height: 80vh;
   background: #37517e;
+  padding-top: 140px;
 }
 
 .align-items-center {
@@ -38,7 +39,7 @@ section {
   padding: 10px 28px 11px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
   color: #fff;
   background: #47b2e4;
 }
@@ -52,4 +53,35 @@ section {
   margin: 10px 0 0 25px;
   color: #fff;
   position: relative;
+}
+
+#hero .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(40, 58, 90, 0.9);
 }

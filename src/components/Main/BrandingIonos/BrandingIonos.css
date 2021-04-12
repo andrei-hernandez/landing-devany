@@ -30,3 +30,14 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+.cliens img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.1);
+}

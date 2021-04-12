@@ -97,3 +97,17 @@ a {
   transition: 0.4s;
   border-radius: 50px;
 }
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .php-email-form button:hover {
+  background: #209dd8;
+}

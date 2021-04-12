@@ -77,3 +77,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services .icon-box:hover h4 a {
+  color: #47b2e4;
+}

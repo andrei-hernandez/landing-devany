@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="col-lg-6">
               <h4>¡Registrate a nuestro newslatter!</h4>
               <p>Podrás recibir cupones de descuento por parte de nuestro equipo de ventas.</p>
-              <form action method="post">
+              <form method="post">
                 <input type="email" name="email" /><input type="submit" value="Subscribe" />
               </form>
             </div>

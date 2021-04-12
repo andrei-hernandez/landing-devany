@@ -87,3 +87,12 @@ p {
   background-color: #007bff;
   transition: width .6s ease;
 }
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
