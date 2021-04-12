@@ -1,4 +1,5 @@
 import React from 'react';
+import './WhyUs.css';
 export default function WhyUS() {
   return (
     <section id="why-us" className="why-us section-bg">
