@@ -1,0 +1,32 @@
+.cliens {
+  padding: 12px 0;
+  text-align: center;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  display: block;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+a {
+  color: #47b2e4;
+}
+
+.cliens img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
