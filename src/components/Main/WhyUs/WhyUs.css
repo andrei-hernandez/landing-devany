@@ -7,10 +7,6 @@ section {
   overflow: hidden;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   width: 100%;
   padding-right: 15px;
@@ -91,11 +87,6 @@ p {
 .why-us .accordion-list ul {
   padding: 0;
   list-style: none;
-}
-
-dl, ol, ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .why-us .accordion-list li {

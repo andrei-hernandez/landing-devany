@@ -37,10 +37,6 @@ a {
   background-color: transparent;
 }
 
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
 @media(min-width: 992px) {
   .d-lg-none {
     display: none !important;

@@ -55,11 +55,6 @@ p {
   padding: 0;
 }
 
-dl, ol, ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 .about .content ul i {
   position: absolute;
   left: 0;

@@ -84,11 +84,6 @@ sub, sup {
   line-height: 20px;
 }
 
-dl, ol, ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 .pricing ul li {
   padding: 10px 0 10px 30px;
   position: relative;
