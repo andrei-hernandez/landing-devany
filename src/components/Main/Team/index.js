@@ -29,5 +29,5 @@ export default function Team() {
       </div>
     </section>
   )
-  //this is the main component
+
 }
