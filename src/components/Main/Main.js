@@ -14,6 +14,7 @@ import Cta from './Cta';
 
 export default function Main() {
 
+  // Email Contact
   const [EmailContact, setEmailContact] = useState(
     {
       from_name: '',
@@ -23,9 +24,9 @@ export default function Main() {
     }
   );
 
-  const handleSubmit = (e) => {
+  const handleContactSubmit = async (e) => {
     e.preventDefault();
-    SendEmailContact(EmailContact);
+    await SendEmailContact(EmailContact);
   }
 
   const handleChangeContact = (e) => {
@@ -58,11 +59,12 @@ export default function Main() {
       <WhyUS />
       <Skills />
       <Services />
-      <Cta handleSubmit={handleSubmit} />
+      <Cta
+      />
       <Team />
       <Pircing />
       <Contact
-        handleSubmit={handleSubmit}
+        handleContactSubmit={handleContactSubmit}
         handleChangeContact={handleChangeContact} />
     </main>
   )

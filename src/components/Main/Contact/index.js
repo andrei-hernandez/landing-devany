@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-export default function Contact({ handleChangeContact = () => { }, handleSubmit = () => { } }) {
+export default function Contact({ handleChangeContact = () => { }, handleContactSubmit = () => { } }) {
   return (
     <section id="contact" className="contact section-bg">
       <div className="container" data-aos="fade-up">
@@ -54,7 +54,7 @@ export default function Contact({ handleChangeContact = () => { }, handleSubmit 
                 <div className="error-message" />
                 <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div className="text-center"><button onClick={handleSubmit}>Enviar mensaje</button></div>
+              <div className="text-center"><button onClick={handleContactSubmit}>Enviar mensaje</button></div>
             </form>
           </div>
         </div>

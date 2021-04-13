@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer() {
+export default function Footer({ handleNewsSubmit = () => { }, handleChangeNews = () => { } }) {
   return (
     <footer id="footer">
       <div className="footer-newsletter">
@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="col-lg-6">
               <h4>¡Registrate a nuestro newslatter!</h4>
               <p>Podrás recibir cupones de descuento por parte de nuestro equipo de ventas.</p>
-              <form method="post">
-                <input type="email" name="email" /><input type="submit" value="Subscribe" />
+              <form>
+                <input type="email" name="email" onChange={handleChangeNews} /><input type="submit" value="Subscribe" onClick={handleNewsSubmit} />
               </form>
             </div>
           </div>
