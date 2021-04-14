@@ -5,23 +5,41 @@ import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function WhyUS() {
 
-  const [toggleChevron, setToggleChevron] = useState(true);
+  const [toggleChevron, setToggleChevron] = useState(false);
   const [toggleChevron2, setToggleChevron2] = useState(true);
   const [toggleChevron3, setToggleChevron3] = useState(true);
 
   const toggleButton = (e) => {
     e.preventDefault();
     setToggleChevron(!toggleChevron);
+    if (toggleChevron2 === false) {
+      setToggleChevron2(true);
+    }
+    if (toggleChevron3 === false) {
+      setToggleChevron3(true);
+    }
   }
 
   const toggleButton2 = (e) => {
     e.preventDefault();
     setToggleChevron2(!toggleChevron2);
+    if (toggleChevron === false) {
+      setToggleChevron(true);
+    }
+    if (toggleChevron3 === false) {
+      setToggleChevron3(true);
+    }
   }
 
   const toggleButton3 = (e) => {
     e.preventDefault();
     setToggleChevron3(!toggleChevron3);
+    if (toggleChevron2 === false) {
+      setToggleChevron2(true);
+    }
+    if (toggleChevron === false) {
+      setToggleChevron(true);
+    }
   }
 
   return (
