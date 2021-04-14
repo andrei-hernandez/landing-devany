@@ -4,8 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+/* jshint ignore:start */
 import $ from 'jquery';
 import AOS from 'aos';
+
+
 
 // Preloader
 $(window).on('load', function () {
@@ -160,4 +163,4 @@ $(window).on('load', function () {
   aos_init();
 });
 
-
+/* jshint ignore:end */
