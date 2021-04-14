@@ -6,9 +6,16 @@ import './animations';
 import Headder from './Header';
 import Main from './Main/Main';
 import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const LandingPage = () => {
+
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 
   // Newsletter 
   const [NewsletterEmail, setNewsletterEmail] = useState(
