@@ -1,6 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './WhyUs.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 export default function WhyUS() {
+
+  const [toggleChevron, setToggleChevron] = useState(true);
+  const [toggleChevron2, setToggleChevron2] = useState(true);
+  const [toggleChevron3, setToggleChevron3] = useState(true);
+
+  const toggleButton = (e) => {
+    e.preventDefault();
+    setToggleChevron(!toggleChevron);
+  }
+
+  const toggleButton2 = (e) => {
+    e.preventDefault();
+    setToggleChevron2(!toggleChevron2);
+  }
+
+  const toggleButton3 = (e) => {
+    e.preventDefault();
+    setToggleChevron3(!toggleChevron3);
+  }
+
   return (
     <section id="why-us" className="why-us section-bg">
       <div className="container-fluid" data-aos="fade-up">
@@ -16,7 +39,11 @@ export default function WhyUS() {
             <div className="accordion-list">
               <ul>
                 <li>
-                  <a data-toggle="collapse" className="collapse" href="#accordion-list-1" style={{ display: 'block' }}><span>01</span> Desarrollo WEB <i className="bx bx-chevron-down icon-show" /><i className="bx bx-chevron-up icon-close" /></a>
+                  <div className="accordition-title d-flex">
+                    <a onClick={toggleButton} data-toggle="collapse" className="collapse" href="#accordion-list-1"><span>01</span> Desarrollo WEB </a>
+                    {toggleChevron && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
+                    {!toggleChevron && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                  </div>
                   <div id="accordion-list-1" className="collapse show" data-parent=".accordion-list">
                     <p>
                       Nuestro fuerte y especialidad. El <strong>Desarrollo Web</strong>, ofrecemos servicios desde crear tu página web junto con un alojamiento en <strong>precios competitivos</strong> hasta el desarrollo de un portal entero para tu empresa el cual facilmente se puede migrar a una aplicación de escritorio o una aplicación móvil.
@@ -25,7 +52,11 @@ export default function WhyUS() {
                   </div>
                 </li>
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" className="collapsed"><span>02</span> Diseño Gráfico <i className="bx bx-chevron-down icon-show" /><i className="bx bx-chevron-up icon-close" /></a>
+                  <div className="accordition-title d-flex">
+                    <a onClick={toggleButton2} data-toggle="collapse" href="#accordion-list-2" className="collapsed"><span>02</span> Diseño Gráfico </a>
+                    {toggleChevron2 && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
+                    {!toggleChevron2 && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                  </div>
                   <div id="accordion-list-2" className="collapse" data-parent=".accordion-list">
                     <p>
                       Contamos con diseñadores gráficos los cuales te darán un trabajo limpio, eficaz y atractivo por un <strong>precio altamente competitivo</strong> dentro del mercado. No dudes ponerte en contacto con nosotros.
@@ -33,7 +64,11 @@ export default function WhyUS() {
                   </div>
                 </li>
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" className="collapsed"><span>03</span> Presupuestos Flexibles <i className="bx bx-chevron-down icon-show" /><i className="bx bx-chevron-up icon-close" /></a>
+                  <div className="accordition-title d-flex" >
+                    <a onClick={toggleButton3} data-toggle="collapse" href="#accordion-list-3" className="collapsed"><span>03</span> Presupuestos Flexibles </a>
+                    {toggleChevron3 && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
+                    {!toggleChevron3 && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                  </div>
                   <div id="accordion-list-3" className="collapse" data-parent=".accordion-list">
                     <p>
                       Nuestros clientes son <strong>importantes para nosotros</strong>, asi que hemos diseñado un modelo de trabajo, el cual funciona a través de <strong>tarifas flexibles</strong>. Al finalizar un proyecto, guardamos el contacto de nuestro cliente y le asignamos una tarifa.

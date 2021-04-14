@@ -90,3 +90,12 @@ p {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+.about .ri-check-double-line {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #47b2e4;
+  line-height: 1;
+}

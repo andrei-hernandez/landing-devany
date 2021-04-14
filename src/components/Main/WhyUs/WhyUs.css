@@ -131,6 +131,7 @@ a {
 }
 
 .why-us .accordion-list a {
+  justify-content: space-between;
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -149,4 +150,23 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.bx {
+  font-family: 'boxicons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  margin: 3px 0 0 0;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+}
+
+#icon {
+  display: flex;
+}
+
+.accordition-title {
+  justify-content: space-between;
 }

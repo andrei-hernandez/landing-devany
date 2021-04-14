@@ -1,5 +1,8 @@
 import React from 'react';
 import './AboutUs.css';
+import { Icon } from '@iconify/react';
+import checkDoubleLine from '@iconify-icons/ri/check-double-line';
+
 
 export default function AboutUS() {
   return (
@@ -14,9 +17,9 @@ export default function AboutUS() {
               Somos una empresa dedicada a la consultoría y desarrollo de soluciones tecnológicas. Te ofrecemos:
             </p>
             <ul>
-              <li><i className="ri-check-double-line" /> Tarifas preferenciales <span className="conditions">(1)</span>.</li>
-              <li><i className="ri-check-double-line" /> Presupuesto ajustable a tu bolsillo <span className="conditions">(2)</span>.</li>
-              <li><i className="ri-check-double-line" /> Trabajo rápido y a tu medida.</li>
+              <li><Icon className="ri-check-double-line" icon={checkDoubleLine} /> Tarifas preferenciales <span className="conditions">(1)</span>.</li>
+              <li><Icon className="ri-check-double-line" icon={checkDoubleLine} /> Presupuesto ajustable a tu bolsillo <span className="conditions">(2)</span>.</li>
+              <li><Icon className="ri-check-double-line" icon={checkDoubleLine} /> Trabajo rápido y a tu medida.</li>
             </ul>
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0">

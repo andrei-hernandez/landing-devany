@@ -1,5 +1,7 @@
 import React from 'react';
 import './Hero.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import HeroImg from '../../../img/hero-img.png'
 
 const Hero = () => {
@@ -12,7 +14,8 @@ const Hero = () => {
             <h2>Creamos las soluciones tecnologicas ideales para su negocio y su bolsillo.</h2>
             <div className="d-lg-flex">
               <a href="#about" className="btn-get-started scrollto">¡INICIEMOS!</a>
-              <a href className="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Nuestra Presentación <i className="icofont-play-alt-2" /></a>
+              <FontAwesomeIcon className="playIcon" icon={faPlayCircle} size="3x" />
+              <a href className="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Nuestra Presentación </a>
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay={200}>

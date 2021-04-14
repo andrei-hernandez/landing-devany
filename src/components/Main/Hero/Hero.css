@@ -48,9 +48,9 @@ section {
   text-decoration: none;
   font-size: 20px;
   display: inline-block;
-  padding: 10px 0 8px 40px;
+  padding: 10px 0 8px 0;
   transition: 0.5s;
-  margin: 10px 0 0 25px;
+  margin: 10px 0 0 0px;
   color: #fff;
   position: relative;
 }
@@ -84,4 +84,12 @@ img {
 
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(40, 58, 90, 0.9);
+}
+
+.playIcon {
+  display: inline-block !important;
+  margin: 20px 10px 0 15px;
+  font-size: 30px;
+  color: #fff;
+  font-size: 2em;
 }
