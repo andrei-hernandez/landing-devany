@@ -1,5 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
+
 
 export default function Contact({ handleChangeContact = () => { }, handleContactSubmit = () => { } }) {
   return (
@@ -14,14 +17,18 @@ export default function Contact({ handleChangeContact = () => { }, handleContact
           <div className="col-lg-5 d-flex align-items-stretch">
             <div className="info">
               <div className="email">
-                <i className="icofont-envelope" />
+                <div className="icons">
+                  <FontAwesomeIcon icon={faEnvelope} className="icofont-envelope" id="iconContact" />
+                </div>
                 <h4>Email:</h4>
                 <p><a href="mailto:contacto@devany.mx">contacto@devany.mx</a></p>
               </div>
               <div className="phone">
-                <i className="icofont-phone" />
+                <div className="icons">
+                  <FontAwesomeIcon icon={faPhoneAlt} className="icofont-phone" id="iconContact" />
+                </div>
                 <h4>Llámanos:</h4>
-                <p>722 338 2375</p>
+                <p>55 4519 7342</p>
               </div>
             </div>
           </div>

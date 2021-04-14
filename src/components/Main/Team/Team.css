@@ -45,6 +45,50 @@
   font-size: 14px;
 }
 
-.team .member:hover {
-  transform: translateY(-10px);
+#member:hover {
+  transform: translateY(-10px) !important;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social a+a {
+  margin-left: 8px;
+}
+
+a {
+  color: #47b2e4;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover>#socialIcon {
+  color: #fff;
+}
+
+#socialIcon {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .member-info {
+  padding-left: 30px;
 }

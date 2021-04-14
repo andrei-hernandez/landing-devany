@@ -96,8 +96,16 @@ sub, sup {
   line-height: 20px;
 }
 
-.pricing ul i {
+#bx-check {
   color: #28a745;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+#bx-x {
+  color: #ccc;
   font-size: 24px;
   position: absolute;
   left: 0;

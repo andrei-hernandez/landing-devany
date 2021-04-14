@@ -19,7 +19,7 @@
   color: #6182ba;
 }
 
-.contact .info i {
+.contact .info .icons {
   font-size: 20px;
   color: #47b2e4;
   float: left;
@@ -31,6 +31,14 @@
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+}
+
+.contact .info .icons:hover {
+  background: #47b2e4;
+}
+
+.contact .info .icons> :hover {
+  color: #fff;
 }
 
 .contact .info h4 {
@@ -96,16 +104,6 @@ a {
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
-}
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #47b2e4;
-  color: #fff;
-}
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #47b2e4;
-  color: #fff;
 }
 
 .contact .php-email-form button:hover {

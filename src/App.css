@@ -306,16 +306,16 @@ a {
   transition: all 0.4s;
 }
 
-.back-to-top i:hover {
+.back-to-top #arrow-up:hover {
   background: #209dd8;
   color: #fff;
 }
 
-.back-to-top i {
+.back-to-top #arrow-up {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 5px;
   width: 40px;
   height: 40px;
   border-radius: 50px;

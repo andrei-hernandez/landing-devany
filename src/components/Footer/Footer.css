@@ -140,7 +140,7 @@ button, input, optgroup, select, textarea {
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 7px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -170,4 +170,24 @@ b, strong {
   background: #209dd8;
   color: #fff;
   text-decoration: none;
+}
+
+.bxl-twitter::before {
+  content: "\e962";
+}
+
+.bxl-linkedin::before {
+  content: "\e93a";
+}
+
+.bxl-skype::before {
+  content: "\e955";
+}
+
+.bxl-instagram::before {
+  content: "\e930";
+}
+
+.bxl-facebook::before {
+  content: "\e920";
 }

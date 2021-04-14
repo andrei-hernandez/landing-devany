@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import HeroImg from '../../../img/hero-img.png'
 

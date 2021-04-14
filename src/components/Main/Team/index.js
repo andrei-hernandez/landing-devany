@@ -1,4 +1,8 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
+import twitterFill from '@iconify-icons/ri/twitter-fill';
+import facebookFill from '@iconify-icons/ri/facebook-fill';
+import instagramFill from '@iconify-icons/ri/instagram-fill';
 import './Team.css';
 
 export default function Team() {
@@ -12,15 +16,15 @@ export default function Team() {
         <div className="row">
           <div className="col-lg-3" />
           <div className="col-lg-6">
-            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay={100}>
+            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay={100} id="member">
               <div className="member-info">
                 <h4>Atl Edrei Cruz Castillo</h4>
                 <span>CEO &amp; Head developer</span>
                 <p>Técnico en programación, certificado por diferentes organizaciones, distingiudo por su pasión al desarrollo y su distinguble edad de inicio.</p>
                 <div className="social">
-                  <a href="https://twitter.com/EdreiCCB"><i className="ri-twitter-fill" /></a>
-                  <a href="https://www.facebook.com/edrei.cruz.9/"><i className="ri-facebook-fill" /></a>
-                  <a href="https://www.instagram.com/soloedrei/"><i className="ri-instagram-fill" /></a>
+                  <a href="https://twitter.com/EdreiCCB"><Icon icon={twitterFill} className="ri-twitter-fill" id="socialIcon" /></a>
+                  <a href="https://www.facebook.com/edrei.cruz.9/"><Icon icon={facebookFill} className="ri-facebook-fill" id="socialIcon" /></a>
+                  <a href="https://www.instagram.com/soloedrei/"><Icon icon={instagramFill} className="ri-instagram-fill" id="socialIcon" /></a>
                 </div>
               </div>
             </div>
@@ -30,4 +34,4 @@ export default function Team() {
     </section>
   )
 
-}//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+}

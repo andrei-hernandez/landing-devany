@@ -1,4 +1,7 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
+import bxCheck from '@iconify-icons/bx/bx-check';
+import bxX from '@iconify-icons/bx/bx-x';
 import './Pircing.css';
 
 export default function Pircing() {
@@ -17,11 +20,11 @@ export default function Pircing() {
               <h3>Devany Free</h3>
               <h4><sup>$</sup>0<span>por hora</span></h4>
               <ul>
-                <li><i className="bx bx-check" /> Revisión de tu empresa</li>
-                <li><i className="bx bx-check" /> Junta general</li>
-                <li><i className="bx bx-check" /> SET-UP de Monday.com</li>
-                <li className="na"><i className="bx bx-x" /> <span>Desarrollo web a tus necesidades</span></li>
-                <li className="na"><i className="bx bx-x" /> <span>Servicios Web</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Revisión de tu empresa</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Junta general</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> SET-UP de Monday.com</li>
+                <li className="na"><Icon icon={bxX} id="bx-x" /> <span>Desarrollo web a tus necesidades</span></li>
+                <li className="na"><Icon icon={bxX} id="bx-x" /> <span>Servicios Web</span></li>
               </ul>
               <a href="#contact" className="buy-btn">Get Started</a>
             </div>
@@ -31,11 +34,11 @@ export default function Pircing() {
               <h3>Devany Gold</h3>
               <h4><sup>$</sup>180<span>por hora</span></h4>
               <ul>
-                <li><i className="bx bx-check" /> Revisión de tu empresa</li>
-                <li><i className="bx bx-check" /> Junta general</li>
-                <li><i className="bx bx-check" /> SET-UP de Monday.com</li>
-                <li><i className="bx bx-check" /> <span>Desarrollo web a tus necesidades</span></li>
-                <li><i className="bx bx-check" /> <span>Servicios Web</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Revisión de tu empresa</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Junta general</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> SET-UP de Monday.com</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> <span>Desarrollo web a tus necesidades</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> <span>Servicios Web</span></li>
               </ul>
               <a href="#contact" className="buy-btn">Get Started</a>
             </div>
@@ -45,12 +48,12 @@ export default function Pircing() {
               <h3>Devany Business</h3>
               <h4><sup>$</sup>150<span>por hora</span></h4>
               <ul>
-                <li><i className="bx bx-check" /> Revisión de tu empresa</li>
-                <li><i className="bx bx-check" /> Junta general</li>
-                <li><i className="bx bx-check" /> SET-UP de Monday.com</li>
-                <li><i className="bx bx-check" /> <span>Desarrollo web a tus necesidades</span></li>
-                <li><i className="bx bx-check" /> <span>Servicios Web</span></li>
-                <li><i className="bx bx-check" /> <span>Atención personalizada</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Revisión de tu empresa</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> Junta general</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> SET-UP de Monday.com</li>
+                <li><Icon icon={bxCheck} id="bx-check" /> <span>Desarrollo web a tus necesidades</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> <span>Servicios Web</span></li>
+                <li><Icon icon={bxCheck} id="bx-check" /> <span>Atención personalizada</span></li>
               </ul>
               <a href="#contact" className="buy-btn">Get Started</a>
             </div>

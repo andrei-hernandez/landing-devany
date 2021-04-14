@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Icon } from '@iconify/react';
+import bxUpArrowAlt from '@iconify-icons/bx/bx-up-arrow-alt';
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap';
 import '../App.css';
@@ -41,10 +44,10 @@ const LandingPage = () => {
       <Footer
         handleNewsSubmit={handleNewsSubmit}
         handleChangeNews={handleChangeNews} />
-      <a href="#hero" className="back-to-top"><i className="ri-arrow-up-line"></i></a>
+      <a href="#hero" className="back-to-top"><Icon icon={bxUpArrowAlt} className="ri-arrow-up-line" id="arrow-up" /></a>
       <div id="preloader"></div>
     </>
   );
 }
-
+console.clear();
 export default LandingPage;

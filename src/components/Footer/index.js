@@ -1,4 +1,10 @@
 import React from 'react';
+import Icon from '@iconify/react';
+import bxlTwitter from '@iconify-icons/bx/bxl-twitter';
+import bxlFacebook from '@iconify-icons/bx/bxl-facebook';
+import bxlInstagram from '@iconify-icons/bx/bxl-instagram';
+import bxlSkype from '@iconify-icons/bx/bxl-skype';
+import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import './Footer.css';
 
 export default function Footer({ handleNewsSubmit = () => { }, handleChangeNews = () => { } }) {
@@ -24,11 +30,11 @@ export default function Footer({ handleNewsSubmit = () => { }, handleChangeNews 
               <h4>Nuestras redes sociales</h4>
               <p>Puedes seguirnos para estar siempre al tanto de todas nuestras noticias</p>
               <div className="social-links mt-3">
-                <a href="twitter.com" className="twitter"><i className="bx bxl-twitter" /></a>
-                <a href="facebook.com" className="facebook"><i className="bx bxl-facebook" /></a>
-                <a href="instagram.com" className="instagram"><i className="bx bxl-instagram" /></a>
-                <a href="google.com" className="google-plus"><i className="bx bxl-skype" /></a>
-                <a href="linkedin.com" className="linkedin"><i className="bx bxl-linkedin" /></a>
+                <a href="twitter.com" className="twitter"><Icon icon={bxlTwitter} id="bx bxl-twitter" /></a>
+                <a href="facebook.com" className="facebook"><Icon icon={bxlFacebook} id="bx bxl-facebook" /></a>
+                <a href="instagram.com" className="instagram"><Icon icon={bxlInstagram} id="bx bxl-instagram" /></a>
+                <a href="google.com" className="google-plus"><Icon icon={bxlSkype} id="bx bxl-skype" /></a>
+                <a href="linkedin.com" className="linkedin"><Icon icon={bxlLinkedin} id="bx bxl-linkedin" /></a>
               </div>
             </div>
           </div>
