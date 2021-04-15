@@ -59,8 +59,7 @@ export default function Main() {
       <WhyUS />
       <Skills />
       <Services />
-      <Cta
-      />
+      <Cta />
       <Team />
       <Pircing />
       <Contact
