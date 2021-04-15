@@ -141,6 +141,7 @@ button, input, optgroup, select, textarea {
   line-height: 1;
   padding: 8px 0;
   margin-right: 7px;
+  margin-top: 7px;
   border-radius: 50%;
   text-align: center;
   width: 36px;

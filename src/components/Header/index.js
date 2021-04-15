@@ -20,7 +20,7 @@ const Headder = () => {
             <li><Link className="nav-link" to="#contact">Contacto</Link></li>
           </ul>
         </nav>
-        <Link to="#about" className="get-started-btn scrollto a">Recorrido</Link>
+        <Link to="#about" className="get-started-btn">Recorrido</Link>
       </div>
     </header >
   );
