@@ -99,21 +99,19 @@ p {
   list-style: none;
 }
 
-.why-us .accordion-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
+a:hover {
+  color: #73c5eb;
   text-decoration: none;
 }
 
 a {
   text-decoration: none;
   color: #47b2e4;
+}
+
+#arrow-up:hover {
+  color: #73c5eb;
+  text-decoration: none;
 }
 
 .why-us .accordion-list span {
@@ -130,7 +128,7 @@ a {
   top: 0;
 }
 
-.why-us .accordion-list a {
+#collapse-link {
   justify-content: space-between;
   display: block;
   position: relative;

@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import bxUpArrowAlt from '@iconify-icons/bx/bx-up-arrow-alt';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import '../App.css';
@@ -21,12 +22,10 @@ const LandingPage = () => {
   });
 
   const scrollToTop = (e) => {
+    e.preventDefault();
     scroll.scrollToTop();
   };
 
-  const prevent = (e) => {
-    e.preventDefault();
-  }
 
   // Newsletter 
   const [NewsletterEmail, setNewsletterEmail] = useState(
@@ -52,15 +51,12 @@ const LandingPage = () => {
       <Footer
         handleNewsSubmit={handleNewsSubmit}
         handleChangeNews={handleChangeNews} />
-      <Link onClick={scrollToTop} duration={3000} delay={2000}>
-        <a href="s" onClick={prevent} className="back-to-top">
-          <Icon icon={bxUpArrowAlt} className="ri-arrow-up-line" id="arrow-up" />
-        </a>
-      </Link>
+      <a href="#" onClick={scrollToTop} className="back-to-top">
+        <Icon icon={bxUpArrowAlt} className="ri-arrow-up-line" id="arrow-up" />
+      </a>
       <div id="preloader"></div>
     </>
 
   );
 }
-console.clear();
 export default LandingPage;

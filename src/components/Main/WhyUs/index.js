@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import './WhyUs.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -58,9 +59,36 @@ export default function WhyUS() {
               <ul>
                 <li>
                   <div className="accordition-title d-flex">
-                    <a onClick={toggleButton} data-toggle="collapse" className="collapse" href="#accordion-list-1"><span>01</span> Desarrollo WEB </a>
-                    {toggleChevron && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
-                    {!toggleChevron && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                    <a onClick={toggleButton} data-toggle="collapse" className="collapse" href="#accordion-list-1" id="collapse-link"><span>01</span> Desarrollo WEB </a>
+                    {
+                      toggleChevron &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-1"
+                        onClick={toggleButton}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
+
+                    {
+                      !toggleChevron &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-1"
+                        onClick={toggleButton}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronUp}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
                   </div>
                   <div id="accordion-list-1" className="collapse show" data-parent=".accordion-list">
                     <p>
@@ -71,9 +99,35 @@ export default function WhyUS() {
                 </li>
                 <li>
                   <div className="accordition-title d-flex">
-                    <a onClick={toggleButton2} data-toggle="collapse" href="#accordion-list-2" className="collapsed"><span>02</span> Diseño Gráfico </a>
-                    {toggleChevron2 && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
-                    {!toggleChevron2 && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                    <a onClick={toggleButton2} data-toggle="collapse" href="#accordion-list-2" id="collapse-link" className="collapsed"><span>02</span> Diseño Gráfico </a>
+                    {
+                      toggleChevron2 &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-2"
+                        onClick={toggleButton2}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
+                    {
+                      !toggleChevron2 &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-2"
+                        onClick={toggleButton2}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronUp}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
                   </div>
                   <div id="accordion-list-2" className="collapse" data-parent=".accordion-list">
                     <p>
@@ -83,9 +137,35 @@ export default function WhyUS() {
                 </li>
                 <li>
                   <div className="accordition-title d-flex" >
-                    <a onClick={toggleButton3} data-toggle="collapse" href="#accordion-list-3" className="collapsed"><span>03</span> Presupuestos Flexibles </a>
-                    {toggleChevron3 && <FontAwesomeIcon icon={faChevronDown} className="bx bx-chevron-down icon-show" />}
-                    {!toggleChevron3 && <FontAwesomeIcon icon={faChevronUp} className="bx bx-chevron-down icon-show" />}
+                    <a onClick={toggleButton3} data-toggle="collapse" href="#accordion-list-3" id="collapse-link" className="collapsed"><span>03</span> Presupuestos Flexibles </a>
+                    {
+                      toggleChevron3 &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-3"
+                        onClick={toggleButton3}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
+                    {
+                      !toggleChevron3 &&
+                      <a
+                        id="arrow-up"
+                        href="#accordion-list-3"
+                        onClick={toggleButton3}
+                        data-toggle="collapse"
+                      >
+                        <FontAwesomeIcon
+                          icon={faChevronUp}
+                          className="bx bx-chevron-down icon-show"
+                        />
+                      </a>
+                    }
                   </div>
                   <div id="accordion-list-3" className="collapse" data-parent=".accordion-list">
                     <p>

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Link, scroller, animateScroll as scroll } from "react-scroll";
+import { scroller, animateScroll as scroll } from "react-scroll";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import './Header.css';
@@ -59,20 +59,15 @@ const Headder = () => {
     <header id="header" className="fixed-top ">
       <div className="container d-flex align-items-center">
         <h1 className="logo mr-auto">
-          <Link
+          <a
             onClick={(e) => scrollToTop(e)}
-            duration={3000}
-            delay={2000}
+            className="a"
+            name="Start"
+            href="#"
+            id="logo"
           >
-            <a
-              className="a"
-              name="Start"
-              href="#"
-              id="logo"
-            >
-              DEVANY
-            </a>
-          </Link>
+            DEVANY
+          </a>
         </h1>
         <nav className="nav-menu d-none d-lg-block">
           <ul>
