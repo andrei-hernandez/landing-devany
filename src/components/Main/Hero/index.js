@@ -1,10 +1,21 @@
 import React from 'react';
 import './Hero.css';
+import { scroller } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import HeroImg from '../../../img/hero-img.png'
-
+/* eslint-disable jsx-a11y/anchor-is-valid*/
 const Hero = () => {
+
+  const ScrollToAboutUs = (e) => {
+    e.preventDefault();
+    scroller.scrollTo('about', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+  }
+
   return (
     <section id="hero" className="d-flex align-items-center">
       <div className="container">
@@ -13,7 +24,13 @@ const Hero = () => {
             <h1>Haciendo tu negocio más facil y flexible.</h1>
             <h2>Creamos las soluciones tecnologicas ideales para su negocio y su bolsillo.</h2>
             <div className="d-lg-flex">
-              <a href="#about" className="btn-get-started scrollto">¡INICIEMOS!</a>
+              <a
+                href="#"
+                onClick={(e) => ScrollToAboutUs(e)}
+                className="btn-get-started"
+              >
+                ¡INICIEMOS!
+              </a>
               <FontAwesomeIcon className="playIcon" icon={faPlayCircle} size="3x" />
               <a href className="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Nuestra Presentación </a>
             </div>

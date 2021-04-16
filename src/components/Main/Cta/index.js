@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { scroller } from 'react-scroll'
+import { scroller } from 'react-scroll';
 import './Cta.css';
 
 export default function Cta() {
